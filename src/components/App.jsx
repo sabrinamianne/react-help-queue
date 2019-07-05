@@ -1,14 +1,14 @@
-import React from "react";
-import Header from "./Header";
-import TicketList from "./TicketList";
-import MyStyledComponent from "./MyStyledComponent";
+import React from 'react';
+import Header from './Header';
+import TicketList from './TicketList';
+
 
 function App(){
   return (
     <div>
       <Header/>
       <TicketList/>
-      <MyStyledComponent/>
+
     </div>
   );
 }
