@@ -2,7 +2,14 @@ import React from 'react';
 
 function Header(){
   return (
-    <h1>Help Queue</h1>
+    <div>
+      <style jsx> {`
+        div {
+          background-color: orange;
+        }
+        `}</style>
+      <h1>Help Queue</h1>
+    </div>
   );
 }
 
