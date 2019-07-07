@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewTicketForm(props) {
   let _names = null;
@@ -8,11 +9,11 @@ function NewTicketForm(props) {
 
   function handleNewTicketFormSubmission(event) {
     event.preventDefault();
-    props.onNewTicketCreation({names: _names.value, location: _location.value, issue: _issue.value});
+    props.onNewTicketCreation({names: _names.value, location: _location.value, issue: _issue.value, id: v4()});
     _names.value = '';
     _location.value = '';
     _issue.value = '';
-}
+  }
 
   return(
     <div>
@@ -27,7 +28,7 @@ function NewTicketForm(props) {
           id='location'
           placeholder='Location'
           ref={(input) => { _location = input;}}/><br></br><br></br>
-          <textarea
+        <textarea
           id='issue'
           placeholder='Describe your issue.'
           ref={(textarea) => { _issue = textarea;}}/> <br></br>
