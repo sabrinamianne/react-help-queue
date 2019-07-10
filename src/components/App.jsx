@@ -4,12 +4,9 @@ import TicketList from './TicketList';
 import NewTicketControl from './NewTicketControl';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
-<<<<<<< HEAD
 import Admin from './Admin';
-
-=======
 import Moment from 'moment';
->>>>>>> 543672209d09b9fa4e300690868d6bca9fb7aa66
+
 
 class App extends React.Component {
 
