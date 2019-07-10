@@ -7,7 +7,7 @@ function Ticket(props){
     <div>
       <style jsx>{`
           div {
-            background-color: #fcd26f;
+            background-color: #d65900;
             width: 500px;
             margin-left: 35%;
           }

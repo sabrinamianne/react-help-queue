@@ -7,7 +7,7 @@ function Header(){
     <div>
       <style jsx> {`
         div {
-          background-color: orange;
+          background-color: #d65900;
           margin-bottom: 2%;
         }
         h1 {
